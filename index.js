@@ -17,6 +17,10 @@ function currentLine(line) {
     return `The line is currently empty.`
   }
   else {
-    
+    var listLine = []
+    for (let i=0; i<katzDeliLine.length; i++) {
+      listLine.push(" "+parseInt(i+1)+ "." +katzDeliLine[i])
+    }
+    return `The line is currently: ${listLine}`
   }
 }
